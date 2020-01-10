@@ -1,0 +1,18 @@
+[url]
+URL=
+
+[database]
+; Aclaración: Si la contraseña u otro dato contiene algún caracter
+; especial debe ir entre comillas simples o dobles
+; Ejemplo PASS = 'Algo!"AlgoMas'
+HOST=
+USER=
+PASS=
+NAME=
+CHARSET=utf8
+
+[errores]
+; Valores posibles más importantes
+; 0 = No se muestra ningún tipo de error
+; E_ALL = Muestra todos los errores posibles 
+REPORTES=0
