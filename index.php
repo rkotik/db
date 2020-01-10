@@ -8,9 +8,7 @@ function tablas()
   $tablas = $query->tablas();
 
   foreach ($tablas as $tabla) {
-    // echo $tabla[Tables_in_estudio];
-    // echo "<br>";
-    backup($tabla['Tables_in_estudio']);
+    backup($tabla['Tables_in_' . NAME]);
   }
 }
 
@@ -34,4 +32,5 @@ echo '</pre>';
 foreach ($columnas as $columna) {
   echo $columna['Field'] . " " . $columna['Type'] . " " . ($columna['Null'] == 'NO' ? 'NOT NULL' : '') . " " . ($columna['Key'] == 'PRI' ? 'Primary Key' : '') . " " . ($columna['Default'] != null ? $columna['Default'] : '') . "<br/>";
 }
-// tablas();
+
+tablas();
